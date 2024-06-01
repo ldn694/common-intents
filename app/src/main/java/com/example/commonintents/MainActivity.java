@@ -21,7 +21,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.gms.actions.NoteIntents;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -70,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
             else if (id == R.id.GetLocationButton) {
                 getLocation();
             }
-            else if (id == R.id.CreateNoteButton) {
-                startActivity(new Intent(this, NoteActivity.class));
+            else if (id == R.id.NewMailButton) {
+                startActivity(new Intent(this, MailActivity.class));
             }
 
         }
@@ -114,13 +113,6 @@ public class MainActivity extends AppCompatActivity {
     private void showMap(Uri geoLocation) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(geoLocation);
-        startActivity(intent);
-    }
-
-    public void createNote(String subject, String text) {
-        Intent intent = new Intent(NoteIntents.ACTION_CREATE_NOTE)
-                .putExtra(NoteIntents.EXTRA_NAME, subject)
-                .putExtra(NoteIntents.EXTRA_TEXT, text);
         startActivity(intent);
     }
 }

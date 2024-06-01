@@ -36,10 +36,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NoteActivity"
+            android:name=".MailActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.NOTE" />
+                <action android:name="android.intent.action.MAIL" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

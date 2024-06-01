@@ -43,11 +43,11 @@
         app:icon="@android:drawable/ic_menu_mylocation" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/CreateNoteButton"
+        android:id="@+id/NewMailButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClickView"
-        android:text="Note"
+        android:text="Mail"
         app:icon="@android:drawable/ic_menu_edit" />
 
 </GridLayout>
