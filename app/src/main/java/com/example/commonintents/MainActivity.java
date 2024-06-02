@@ -68,9 +68,6 @@ public class MainActivity extends AppCompatActivity {
             else if (id == R.id.StartTimerButton) {
                 startActivity(new Intent(this, TimerActivity.class));
             }
-            else if (id == R.id.ShowTimerButton) {
-                showTimer();
-            }
             else if (id == R.id.TurnOnCameraButton) {
                 capturePhoto();
             }
@@ -101,12 +98,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, DialActivity.class));
             }
         }
-    }
-
-
-    private void showTimer() {
-        Intent intent = new Intent(AlarmClock.ACTION_SHOW_TIMERS);
-        startActivity(intent);
     }
 
     private void showAlarm() {

@@ -40,13 +40,13 @@
         app:icon="@android:drawable/ic_menu_recent_history" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/GetLocationButton"
         android:layout_width="0dp"
         android:layout_columnWeight="1"
         android:layout_height="wrap_content"
-        android:text="Show Timer"
-        android:id="@+id/ShowTimerButton"
         android:onClick="onClickView"
-        app:icon="@android:drawable/ic_menu_recent_history" />
+        android:text="Location"
+        app:icon="@android:drawable/ic_menu_mylocation" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/TurnOnCameraButton"
@@ -67,21 +67,21 @@
         app:icon="@android:drawable/ic_menu_camera" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/GetLocationButton"
-        android:layout_width="0dp"
-        android:layout_columnWeight="1"
-        android:layout_height="wrap_content"
-        android:onClick="onClickView"
-        android:text="Location"
-        app:icon="@android:drawable/ic_menu_mylocation" />
-
-    <com.google.android.material.button.MaterialButton
         android:id="@+id/NewMailButton"
         android:layout_width="0dp"
         android:layout_columnWeight="1"
         android:layout_height="wrap_content"
         android:onClick="onClickView"
         android:text="Mail"
+        app:icon="@android:drawable/ic_menu_edit" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SMSButton"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="wrap_content"
+        android:onClick="onClickView"
+        android:text="SMS"
         app:icon="@android:drawable/ic_menu_edit" />
 
     <com.google.android.material.button.MaterialButton
@@ -96,11 +96,11 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/GoogleSearchButton"
         android:layout_width="0dp"
-        android:layout_columnWeight="1"
         android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
         android:onClick="onClickView"
         android:text="Google"
-        app:icon="@android:drawable/ic_media_play" />
+        app:icon="@android:drawable/ic_menu_search" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/OpenSettingsButton"
@@ -110,15 +110,6 @@
         android:onClick="onClickView"
         android:text="Settings"
         app:icon="@android:drawable/ic_menu_manage" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/SMSButton"
-        android:layout_width="0dp"
-        android:layout_columnWeight="1"
-        android:layout_height="wrap_content"
-        android:onClick="onClickView"
-        android:text="SMS"
-        app:icon="@android:drawable/ic_menu_edit" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/PhoneDial"
