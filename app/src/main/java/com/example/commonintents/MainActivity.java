@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
@@ -61,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
             if (id == R.id.SetAlarmButton) {
                 startActivity(new Intent(this, AlarmActivity.class));
             }
+            else if (id == R.id.ShowAlarmButton) {
+                showAlarm();
+            }
             else if (id == R.id.TurnOnCameraButton) {
                 capturePhoto();
             }
@@ -81,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+    }
+
+    private void showAlarm() {
+        Intent intent = new Intent(AlarmClock.ACTION_SHOW_ALARMS);
+        startActivity(intent);
     }
 
     public void capturePhoto() {
