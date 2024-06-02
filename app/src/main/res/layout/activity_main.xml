@@ -76,6 +76,15 @@
         app:icon="@android:drawable/ic_media_play" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/GoogleSearchButton"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="wrap_content"
+        android:onClick="onClickView"
+        android:text="Google"
+        app:icon="@android:drawable/ic_media_play" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/OpenSettingsButton"
         android:layout_width="0dp"
         android:layout_columnWeight="1"

@@ -78,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, MailActivity.class));
             }
             else if (id == R.id.YoutubeSearchButton) {
+                YoutubeActivity.TYPE_SEARCH = 0;
+                startActivity(new Intent(this, YoutubeActivity.class));
+            }
+            else if (id == R.id.GoogleSearchButton) {
+                YoutubeActivity.TYPE_SEARCH = 1;
                 startActivity(new Intent(this, YoutubeActivity.class));
             }
             else if (id == R.id.OpenSettingsButton) {

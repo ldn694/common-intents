@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class YoutubeActivity extends AppCompatActivity {
     private EditText searchBar;
+    public static int TYPE_SEARCH = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,12 @@ public class YoutubeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_youtube);
 
         searchBar = findViewById(R.id.search_bar);
+
+        if (TYPE_SEARCH == 0)
+            searchBar.setHint("Enter video name");
+        else
+            searchBar.setHint("Search");
+
         searchBar.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -27,7 +34,10 @@ public class YoutubeActivity extends AppCompatActivity {
                         event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER && event.getAction() == KeyEvent.ACTION_DOWN) {
 
                     // Your custom action here
-                    searchYouTube();
+                    if (TYPE_SEARCH == 0)
+                        searchYouTube();
+                    else
+                        searchGoogle();
                     return true;
                 }
                 return false;
@@ -36,9 +46,21 @@ public class YoutubeActivity extends AppCompatActivity {
     }
 
 
-    public void onSearch(View view) {
-        searchYouTube();
+    public void onSearch(View view)
+    {
+        if (TYPE_SEARCH == 0)
+            searchYouTube();
+        else
+            searchGoogle();
     }
+
+    private void searchGoogle() {
+        String query = searchBar.getText().toString();
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + Uri.encode(query)));
+        startActivity(intent);
+
+    }
+
     public void searchYouTube() {
         String query = searchBar.getText().toString();
 
