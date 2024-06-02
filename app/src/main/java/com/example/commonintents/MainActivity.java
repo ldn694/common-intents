@@ -79,7 +79,9 @@ public class MainActivity extends AppCompatActivity {
             else if (id == R.id.OpenSettingsButton) {
                 startActivity(new Intent(Settings.ACTION_SETTINGS));
             }
-
+            else if (id == R.id.SMSButton) {
+                startActivity(new Intent(this, SMSActivity.class));
+            }
         }
     }
 
