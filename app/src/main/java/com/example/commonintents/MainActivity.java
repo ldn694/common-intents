@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -74,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (id == R.id.YoutubeSearchButton) {
                 startActivity(new Intent(this, YoutubeActivity.class));
+            }
+            else if (id == R.id.OpenSettingsButton) {
+                startActivity(new Intent(Settings.ACTION_SETTINGS));
             }
 
         }
