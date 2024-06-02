@@ -1,38 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/NoteActivity"
+    android:id="@+id/MailActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:weightSum="10"
-    tools:context=".NoteActivity">
+    android:weightSum="14"
+    tools:context=".MailActivity">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:id="@+id/note_title"
-        android:hint="Type here for title"
-        android:textStyle="bold"
-        android:textSize="30dp"
+        android:id="@+id/recipientEditText"
+        android:hint="Recipient"
+        android:textSize="15sp"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8"
-        android:id="@+id/note_content"
+        android:layout_weight="1"
+        android:id="@+id/subjectEditText"
+        android:hint="Subject"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/bodyEditText"
         android:gravity="top"
-        android:hint="Type here for content"
+        android:hint="Type your mail here"
+        android:textSize="15sp"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:id="@+id/note_save"
-        android:textSize="20dp"
-        android:text="Save"
-        android:onClick="saveNote"
+        android:id="@+id/mail_send"
+        android:textSize="20sp"
+        android:text="Send"
+        android:onClick="sendEmail"
         />
 
 
