@@ -85,6 +85,15 @@
         app:icon="@android:drawable/ic_menu_manage" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/SMSButton"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="wrap_content"
+        android:onClick="onClickView"
+        android:text="SMS"
+        app:icon="@android:drawable/ic_menu_edit" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/PhoneDial"
         android:layout_width="0dp"
         android:layout_columnWeight="1"

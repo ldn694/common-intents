@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SMSActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="14"
+    tools:context=".SMSActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/phoneNumberEditText"
+        android:hint="Phone number"
+        android:textSize="15sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/smsEditText"
+        android:gravity="top"
+        android:hint="Type your sms here"
+        android:textSize="15sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/smsSend"
+        android:textSize="20sp"
+        android:text="Send"
+        android:onClick="sendSMS"
+        />
+
+</LinearLayout>
