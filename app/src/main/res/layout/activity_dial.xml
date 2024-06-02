@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,14 +19,14 @@
         android:textAlignment="center"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:inputType="numberPassword"/>
+        android:inputType="phone"/>
 
     <Button
-        android:id="@+id/callButton"
+        android:id="@+id/dialButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Call"
+        android:text="Dial"
         android:layout_marginTop="10dp"
         app:icon="@android:drawable/stat_sys_phone_call" />
 
