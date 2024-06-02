@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".TimerActivity">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:gravity="center"
+        android:layout_column="2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/text_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hour"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/text_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minute"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/text_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/edit_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize= "24sp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:hint="Hour"/>
+
+        <EditText
+            android:id="@+id/edit_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize= "24sp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Minute"/>
+
+        <EditText
+            android:id="@+id/edit_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Second"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        >
+        <Button
+            android:id="@+id/start_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Start"
+            android:onClick="toggleStartButton"
+            />
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Reset"
+            android:onClick="reset"
+            />
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="10"
+        android:progress="10"/>
+</LinearLayout>
