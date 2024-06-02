@@ -50,4 +50,13 @@
         android:text="Mail"
         app:icon="@android:drawable/ic_menu_edit" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/YoutubeSearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickView"
+        android:text="Youtube"
+        app:icon="@android:drawable/ic_media_play" />
+
+
 </GridLayout>

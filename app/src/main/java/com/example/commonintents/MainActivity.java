@@ -72,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
             else if (id == R.id.NewMailButton) {
                 startActivity(new Intent(this, MailActivity.class));
             }
+            else if (id == R.id.YoutubeSearchButton) {
+                startActivity(new Intent(this, YoutubeActivity.class));
+            }
 
         }
     }
@@ -115,4 +118,6 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(geoLocation);
         startActivity(intent);
     }
+
+
 }
