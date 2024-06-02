@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:rowCount="4"
-    android:columnCount="3"
-    android:layout_column="3"
+    android:columnCount="2"
+    android:layout_column="2"
+    android:layout_marginHorizontal="20dp"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
         android:layout_height="wrap_content"
         android:text="Set Alarm"
         android:id="@+id/SetAlarmButton"
@@ -20,7 +23,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/TurnOnCameraButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
         android:layout_height="wrap_content"
         android:onClick="onClickView"
         android:text="Camera"
@@ -28,7 +32,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/TurnOnVideoButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
         android:layout_height="wrap_content"
         android:onClick="onClickView"
         android:text="Video"
@@ -36,7 +41,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/GetLocationButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
         android:layout_height="wrap_content"
         android:onClick="onClickView"
         android:text="Location"
@@ -44,7 +50,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/NewMailButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
         android:layout_height="wrap_content"
         android:onClick="onClickView"
         android:text="Mail"
@@ -52,11 +59,20 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/YoutubeSearchButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
         android:layout_height="wrap_content"
         android:onClick="onClickView"
         android:text="Youtube"
         app:icon="@android:drawable/ic_media_play" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/OpenSettingsButton"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="wrap_content"
+        android:onClick="onClickView"
+        android:text="Settings"
+        app:icon="@android:drawable/ic_menu_manage" />
 
 </GridLayout>
