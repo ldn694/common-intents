@@ -31,6 +31,24 @@
         app:icon="@android:drawable/ic_menu_recent_history" />
 
     <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="wrap_content"
+        android:text="Start Timer"
+        android:id="@+id/StartTimerButton"
+        android:onClick="onClickView"
+        app:icon="@android:drawable/ic_menu_recent_history" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="wrap_content"
+        android:text="Show Timer"
+        android:id="@+id/ShowTimerButton"
+        android:onClick="onClickView"
+        app:icon="@android:drawable/ic_menu_recent_history" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/TurnOnCameraButton"
         android:layout_width="0dp"
         android:layout_columnWeight="1"

@@ -59,6 +59,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".TimerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMER" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".YoutubeActivity"
             android:exported="true">
             <intent-filter>
